@@ -2,15 +2,24 @@
     padding: 7px;
     border-bottom: 1px solid white;
 }
-.portada a {
+.Logo {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
 }
-.portada a > * { 
+.Logo > * { 
     color: white; 
     margin: 0px 5px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+.navbar input[type="search"] {
+    border-radius: 20px;
+    border: none;
+}
+.navbar-nav li {
     font-family: 'Cormorant Garamond', serif;
 }
 
@@ -51,3 +60,55 @@
     font-size: 15pt;
     text-transform: uppercase;
 }
+
+
+
+
+footer {
+    height: 150px;
+  }
+
+  
+  .Footer-info ul li a {
+    color: brown;
+    text-decoration: none;
+    font-size: 14pt;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0px 5px;
+  }
+.Footer-info ul li a:hover {
+    text-shadow: 0px 0px 1px white;
+} 
+
+  footer {
+    padding: 10px;
+  }
+  .Footer-redes > * {
+    margin: 15px 0;
+  }
+
+  .Footer-redes ul li a {
+    display: flex; justify-content: center; align-items: flex-end;
+    width: 25px;    height: 25px;
+
+    margin: 0px 5px;
+
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    text-decoration: none;
+    font-size: 12pt;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .Data-fiscal img {
+    width: 50px;
+    object-fit: scale-down;
+  }
+  .Data-fiscal p {
+    margin: 0;
+    color: white;
+    font-size: 10pt;
+    padding: 5px 5px;
+    font-family: 'Cormorant Garamond', serif;
+  }
