@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <style>
+
+            /**/
+                .Card {
+                    width: 500px;
+                    resize: horizontal;
+                    overflow: hidden;
+                }
+            /**/
+            main .row {
+              padding: 0 15px;
+            }
+
+            .Card {
+              border: 1px solid transparent;
+              padding: 10px;
+              font-family: 'Cormorant Garamond', serif;
+              overflow: hidden;  
+            }
+            .Card a {
+              text-decoration: none;
+              color: black; 
+            }
+            .Card h3 {
+              font-weight: bold;
+              font-size: 28pt;
+            }
+            
+            .Card span {
+              font-size: 14pt;
+              color: brown;
+              font-weight: bold; 
+            }
+
+            .Card-content {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-around;
+            }
+            .Card-content img {
+              max-width: 400px;
+              max-height: 200px;
+              min-width: 200px;
+              object-fit: scale-down;
+              margin: 10px;
+            }
+            .Card-content p {
+              display: -webkit-box;
+              text-overflow: clip;
+              -webkit-line-clamp: 5;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+
+              font-size: 13pt;
+              font-weight: bold;
+              min-width: 200px;
+            }
+            .Card-content p {
+                flex-basis: 300px;
+                flex-grow: 1;
+            }
+            .Card-content img {
+                flex-basis: 200px;
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <main>
+            <div class="Card">
+                <a href="#">
+                  <h3>Titulo</h3>
+    
+                  <div class="Card-content flex-wrap">
+                    <img src="img/komi-san.jpg" alt="">
+                    <p>
+                      <span>Lomas de Tafi |</span>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum amet hic totam soluta iure id odit voluptate, eaque necessitatibus maxime ut dicta consequatur excepturi voluptas odio similique? Quaerat, nesciunt ducimus?
+                    </p>
+                  </div>
+
+                  <span class="d-block text-end">Javier Castillo</span>
+                </a>
+            </div>
+        </main>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
