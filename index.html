@@ -20,11 +20,48 @@
         <link rel="stylesheet" href="styles.css">
 
         <style>
-            main {
-              height: 500px;
+            main .row {
+              padding: 0 15px;
             }
 
-            
+            .Card {
+              border: 1px solid transparent;
+              padding: 10px;
+              font-family: 'Cormorant Garamond', serif;
+              overflow: hidden;  
+  
+            }
+            .Card h3 {
+              font-weight: bold;
+              font-size: 28pt;
+            }
+            .Card a {
+              text-decoration: none;
+              color: black; 
+              
+            }
+            .Card img {
+              max-width: 400px;
+              max-height: 200px;
+              flex-basis: 200px;
+              object-fit: scale-down;
+              margin: 10px;
+            }
+            .Card p {
+              display: -webkit-box;
+              text-overflow: clip;
+              -webkit-line-clamp: 5;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              font-size: 13pt;
+              font-weight: bold;
+              width: fit-content;
+            }
+            .Card span {
+              font-size: 14pt;
+              color: brown;
+              font-weight: bold; 
+            }
         </style>
     </head>
 
@@ -151,7 +188,72 @@
 
       <!--Main content-->
       <main class="container-md bg-light">
+        <div class="row">
+          <div class="Card col-4">
+            <a href="#">
+              <h3>Titulo</h3>
 
+              <div class="d-flex justify-content-center flex-wrap">
+                <img src="img/pepe.jpg" alt="">
+                <p>
+                  <span>Lomas de Tafi |</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum amet hic totam soluta iure id odit voluptate, eaque necessitatibus maxime ut dicta consequatur excepturi voluptas odio similique? Quaerat, nesciunt ducimus?
+                </p>
+              </div>
+              
+              <span class="d-block text-end">Luciano Cordoba</span>
+            </a>
+          </div>
+
+          <div class="Card col-8">
+            <a href="#">
+              <h3>Titulo</h3>
+
+              <div class="d-flex justify-content-center flex-wrap">
+                <img src="img/guerra.jpg" alt="">
+                <p>
+                  <span>Lomas de Tafi |</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum amet hic totam soluta iure id odit voluptate, eaque necessitatibus maxime ut dicta consequatur excepturi voluptas odio similique? Quaerat, nesciunt ducimus?
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row justify-content-around">
+          <div class="Card col-6">
+            <a href="#">
+              <h3>Titulo</h3>
+
+              <div class="d-flex justify-content-center ">
+                <img src="img/niño.jpg" alt="">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum amet hic totam soluta iure id odit voluptate, eaque necessitatibus maxime ut dicta consequatur excepturi voluptas odio similique? Quaerat, nesciunt ducimus?
+                </p>
+              </div>
+              
+              <span class="d-block text-end">Luciano Cordoba</span>
+            </a>
+          </div>
+
+          <div class="Card col-4">
+            <a href="#">
+              <h3>Titulo</h3>
+
+              <div class="d-flex justify-content-center flex-wrap">
+                
+                <p>
+                  <span>Cordoba |</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum amet hic totam soluta iure id odit voluptate, eaque necessitatibus maxime ut dicta consequatur excepturi voluptas odio similique? Quaerat, nesciunt ducimus?
+                </p>
+                <img src="img/presto.webp" alt="">
+              </div>
+              
+              <span class="d-block text-end">Javier Castillo</span>
+            </a>
+          </div>
+        </div>
+        
       </main>
 
       <!--Footer-->
